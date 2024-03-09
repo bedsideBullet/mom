@@ -1,3 +1,5 @@
+d
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,11 +20,6 @@
     </header>
 
     <nav class="navbar">
-      <div class="navbar-toggle" onclick="toggleNavbar()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
       <ul class="nav-links">
         <li></li>
         <li>
@@ -30,7 +27,6 @@
             >Services</a
           >
         </li>
-
         <li>
           <a class="nav-link" href="#" onclick="openContactModal()">Contact</a>
         </li>
@@ -131,7 +127,7 @@
         <h3 class="cormorant-garamond-semibold">Contact Us</h3>
         <form class="contact-form" action="#" method="POST">
           <input type="text" name="name" placeholder="Name" required />
-          <input type="tel" name="name" placeholder="Phone Number" required />
+          <input type="tel" name="number" placeholder="Phone Number" required />
           <input type="email" name="email" placeholder="Email" required />
           <textarea
             name="message"
@@ -146,11 +142,6 @@
       function scrollToServices() {
         const servicesSection = document.getElementById("services");
         servicesSection.scrollIntoView({ behavior: "smooth" });
-      }
-
-      function toggleNavbar() {
-        var navbar = document.querySelector(".navbar");
-        navbar.classList.toggle("active");
       }
 
       function openContactModal() {

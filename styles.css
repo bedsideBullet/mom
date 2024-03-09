@@ -270,11 +270,14 @@ hr {
   }
 
   .navbar {
+    display: flex;
+    justify-content: center;
     padding: 10px;
   }
 
   .nav-link {
     padding: 8px;
+    display: flex;
   }
 
   .navbar-toggle {
