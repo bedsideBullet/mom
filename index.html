@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notary</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="header-background"></div>
+      <h2 class="cormorant-garamond-semibold">Rebecca Smith</h2>
+      <h4 class="cormorant-garamond-semibold subtext">Notary Public</h4>
+      <hr />
+    </header>
+
+    <nav class="navbar">
+      <div class="navbar-toggle" onclick="toggleNavbar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li></li>
+        <li>
+          <a class="nav-link" href="#services" onclick="scrollToServices()"
+            >Services</a
+          >
+        </li>
+
+        <li>
+          <a class="nav-link" href="#" onclick="openContactModal()">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="about">
+      <div class="about-header">
+        <h3 class="cormorant-garamond-semibold">About Me</h3>
+        <img
+          src="./assets/springtownlogo.png"
+          alt="Springtown Logo"
+          class="springtown-logo" />
+      </div>
+      <div class="about-content">
+        <p>
+          Hello, I'm Rebecca Smith, your friendly neighborhood notary public
+          serving Springtown, Texas, and nearby areas. With a passion for
+          providing dependable and personalized notary services, I am dedicated
+          to meeting the diverse needs of my community with professionalism and
+          integrity.
+        </p>
+        <p>
+          As a solo practitioner, I offer a hands-on approach to notarization,
+          ensuring that each client receives the individual attention and care
+          they deserve. Whether you require assistance with real estate
+          transactions, legal documents, or personal paperwork, I am here to
+          assist you every step of the way.
+        </p>
+        <p>
+          With years of experience in the field, I understand the importance of
+          accuracy and confidentiality in every notarial act. You can trust me
+          to handle your documents with the utmost care and attention to detail,
+          ensuring that they are properly notarized and legally binding.
+        </p>
+        <p>
+          As a Springtown resident myself, I am deeply invested in the
+          well-being of our community. I strive to make the notarization process
+          as convenient and stress-free as possible for my clients, offering
+          flexible appointment times and mobile notary services for those unable
+          to visit my office.
+        </p>
+        <p>
+          Whether you're a homeowner, business owner, or individual in need of
+          notary services, I am here to help. Contact me today to schedule an
+          appointment or learn more about how I can assist you with your
+          notarial needs.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h3 class="cormorant-garamond-semibold service">Top Services Offered</h3>
+      <div class="services-container">
+        <div class="service-card">
+          <h4>Acknowledgement</h4>
+          <p>
+            An acknowledgment is a formal declaration before an authorized
+            official such as a notary public, by a person who has executed an
+            instrument, that the execution was voluntary and authentic.
+          </p>
+        </div>
+        <div class="service-card">
+          <h4>Notarization of Legal Documents</h4>
+          <p>
+            Notaries in Texas are authorized to notarize various legal documents
+            including affidavits, deeds, contracts, powers of attorney, and
+            more.
+          </p>
+        </div>
+        <div class="service-card">
+          <h4>Mobile Notary Services</h4>
+          <p>
+            Mobile notaries are available to travel to a client's location, such
+            as a home, office, hospital, or other convenient location, to
+            perform notarial acts.
+          </p>
+        </div>
+      </div>
+      <button class="contact-button" onclick="openContactModal()">
+        Contact for pricing
+      </button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024 Rebecca Smith | All rights reserved</p>
+
+        <p><strong>Notary ID:</strong> 134480499</p>
+
+        <img src="./assets/aanlogo.png" alt="AAN Logo" />
+      </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <h3 class="cormorant-garamond-semibold">Contact Us</h3>
+        <form class="contact-form" action="#" method="POST">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="tel" name="name" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function scrollToServices() {
+        const servicesSection = document.getElementById("services");
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function toggleNavbar() {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+
+      function openContactModal() {
+        var modal = document.getElementById("contactModal");
+        modal.style.display = "block";
+      }
+
+      function closeContactModal() {
+        var modal = document.getElementById("contactModal");
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
