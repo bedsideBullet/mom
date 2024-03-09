@@ -251,3 +251,60 @@ hr {
 .contact {
   margin-bottom: 51px; /* Adjusted for consistency */
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 2em;
+  }
+
+  .top-header {
+    margin-bottom: 2em;
+  }
+
+  .cormorant-garamond-semibold {
+    font-size: 5em;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-link {
+    padding: 8px;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .about-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .springtown-logo {
+    margin: 1em 0;
+  }
+
+  .about-content {
+    font-size: 1em;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1em; /* Adjusted padding */
+  }
+
+  .service-card h4 {
+    font-size: 1.2em; /* Adjusted font size */
+  }
+
+  .service-card p {
+    font-size: 1em; /* Adjusted font size */
+  }
+}
